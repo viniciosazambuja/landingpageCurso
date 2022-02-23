@@ -103,7 +103,8 @@ section{
     border: 2px solid var(--red5);
     border-radius: 5px;
     text-align: center;
-    color: #FFFFFF;    
+    color: #FFFFFF;
+    margin: 5px;
 }
 
 .divDados{
@@ -111,12 +112,13 @@ section{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+
 }
 
 #sectionDados{
     width: 100%;
     background-color: var(--black);
-    padding: 25px 5vw;
+    padding: 20px 5vw;
     text-align: center;
+    align-items: center;
 }
