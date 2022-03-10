@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Extremo - Aprenda a vender cursos de uma vez por todas!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3ea75a4b02.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <h1 class="titulo-head">Curso Extremo</h1>
       <nav>
         <ul>
-          <li><a>Sobre</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a>Benefícios</a></li>
           <li><a>Alunos</a></li>
         </ul>
         <button>Comprar</button>
       </nav>
     </header>
-    <section id="primeiraSection">
+    <section class="segundaSection">
       <div class="primeiroTexto">
         <h1>Curso Extremo, venda mais, venda agora</h1>
         <h2 id="subtitle">
@@ -30,28 +34,28 @@
         </h2>
         <button>Garantir minha vaga</button>
       </div>
-      <img src="/img/placeholder.jpg" class="imagemPrincipal"/>
+      <img src="./img/rocket.png" class="imagemPrincipal" />
     </section>
     <section id="sectionDados">
-        <div class="divDados">
-            <div class="dados">
-                <i></i>
-                <h3>R$ 300.000</h3>
-                <p>de faturamento no ano</p>
-            </div>
-            <div class="dados">
-                <i></i>
-                <h3>450</h3>
-                <p>clientes satisfeitos</p>
-            </div>
-            <div class="dados">
-                <i></i>
-                <h3>345</h3>
-                <p>cursos vendidos</p>
-            </div>
+      <div class="divDados">
+        <div class="dados">
+          <i class="fas fa-rocket icon"></i>
+          <h3>R$ 300.000</h3>
+          <p>de faturamento no ano</p>
         </div>
+        <div class="dados">
+          <i class="fas fa-users icon"></i>
+          <h3>450</h3>
+          <p>clientes satisfeitos</p>
+        </div>
+        <div class="dados">
+          <i class="fas fa-book-open icon"></i>
+          <h3>345</h3>
+          <p>cursos vendidos</p>
+        </div>
+      </div>
     </section>
-    <section>
+    <section id=sobre class="segundaSection">
       <iframe
         width="560"
         height="315"
@@ -61,36 +65,38 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <div>
+      <div class="divSobre">
         <h2>Curso Extremo</h2>
-        <p>
+        <p class="sobre">
           Aprenda de uma vez por todas tudo que você precisa para ser um
           vendedor de curso de sucesso! Chega de ladainhas e formulas mágicas
         </p>
       </div>
     </section>
-    <section>
-      <h2>Benefícios</h2>
-      <div>
-        <div>
-          <i></i>
+    <section id="sectionSobre">
+      <h2 class="textoCentralizado">Benefícios</h2>
+      <div class="divDados">
+        <div class="divBeneficios">
+          <div class="divIcon"><i class="fas fa-face-grin-beam icon"></i></div>
           <h3>Praticidade</h3>
           <p>Lance seu curso em menos de 7 dias</p>
         </div>
-        <div>
-          <i></i>
+        <div class="divBeneficios">
+          <div class="divIcon">
+            <i class="fas fa-face-grin-tongue-wink icon"></i>
+          </div>
           <h3>Ganho garantido</h3>
           <p>Garanta seu faturamento anual</p>
         </div>
-        <div>
-          <i></i>
+        <div class="divBeneficios">
+          <div class="divIcon"><i class="fas fa-sitemap icon"></i></div>
           <h3>Marketing Multinivel</h3>
-        <p>Aproveite nosso "esquema" de marketing multinivel</p>
+          <p>Aproveite nosso "esquema" de marketing multinivel</p>
         </div>
       </div>
     </section>
-    <section>
-        <iframe
+    <section class="segundaSection">
+      <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/uilkmUoXoLU"
@@ -99,38 +105,49 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <div>
-        <div>
-          <img />
+      <ul class="divComentarios">
+        <li>
+          <img src="./img/eder.jfif" />
           <h3>Ederson</h3>
           <p>Melhor curso de vender cursos que eu ja comprei!</p>
-        </div>
-        <div>
-          <img />
+        </li>
+        <li>
+          <img src="./img/pedro.jfif" />
           <h3>Pedro</h3>
           <p>Vendi muitos cursos após comprar este curso!</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
-    <section>
-      <h2>Tire sua dúvida aqui</h2>
-      <div>
-        <div>
+    <section class="fac">
+      <h2 class="textoCentralizado">Tire sua dúvida aqui</h2>
+      <ul>
+        <li>
           <h4>Como comprar?</h4>
           <p>Clique aqui e lalalalalala</p>
-        </div>
-        <div>
+        </li>
+        <li>
           <h4>Quanto tempo dura?</h4>
           <p>Clique aqui e lalalalalala</p>
-        </div>
-        <div>
+        </li>
+        <li>
           <h4>Como crio o meu curso?</h4>
           <p>Clique aqui e lalalalalala</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <section>
-      <form></form>
+      <form>
+        <label for="">Nome</label>
+        <input type="text" />
+        
+        <label for="">Sobrenome</label>
+        <input type="text" />
+        
+        <label for="">E-mail</label>
+        <input type="email" />
+
+        <input type="submit" />
+      </form>
     </section>
   </body>
 </html>
