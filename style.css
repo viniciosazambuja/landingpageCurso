@@ -1,5 +1,6 @@
 :root{
     --red:#8a1e1e;
+    --redh:#5e1a1a;
     --red5: #f36464;
     --black: #2b2a2a;
     
@@ -87,10 +88,12 @@ button{
     font-size: 16px;
     border-radius: 12px;
     transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 0 -2px;
 }
 
 button:hover {
-    background-color: var(--red);
+    background-color: var(--redh);
     color: white;
 }
 
@@ -99,8 +102,9 @@ section{
 }
 
 
-#sectionSobre{
+#beneficios{
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   background-color: #BBBBBB;
 }
@@ -262,4 +266,34 @@ h4{
   border-radius: 10px;
   list-style: none;
   font-size: 15px;
+}
+
+#beneficios button{
+  margin-top: 50px;
+  width: 300px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: var(--red);
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--red);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
 }
