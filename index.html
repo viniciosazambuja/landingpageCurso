@@ -137,36 +137,42 @@
         </li>
       </ul>
     </section>
-    <section>
-      <form>
-        <label for="">Nome</label>
-        <input type="text" />
+    <section id="sectionModal">
+      <h2 class="textoCentralizado">Consultoria Grátis</h2>
+      <div class="centralizado">
+        <form action="" id="formulario" method="POST" name="formulario">
+          <label for="">Nome</label>
+          <input id="nome" type="text" />
 
-        <label for="">Sobrenome</label>
-        <input type="text" />
+          <label for="">Sobrenome</label>
+          <input id="sobrenome" type="text" />
 
-        <label for="">E-mail</label>
-        <input type="email" />
+          <label for="">E-mail</label>
+          <input id="email" type="email" />
 
-        <input type="submit" />
-      </form>
+          <input onsubmit="validar()" type="submit" />
+        </form>
+      </div>
     </section>
     <aside id="modalForm" class="modal">
       <div class="areaUtil">
+        <h2 class="textoCentralizado">Consultoria Grátis</h2>
+        <a href="/" title="Fechar" class="fechar">x</a>
         <form>
           <label for="">Nome</label>
-          <input type="text" />
+          <input id="nomeF" type="text" />
 
           <label for="">Sobrenome</label>
-          <input type="text" />
+          <input id="sobrenomeF" type="text" />
 
           <label for="">E-mail</label>
-          <input type="email" />
+          <input id="emailF" type="email" />
 
-          <input type="submit" />
+          <input onsubmit="validar()" type="submit" />
         </form>
       </div>
     </aside>
     <script src="./app.js"></script>
+    <script src="./validaForm.js"></script>
   </body>
 </html>
