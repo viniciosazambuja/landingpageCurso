@@ -1,5 +1,4 @@
 let buttons = document.querySelectorAll('button')
-
 let modal = document.querySelector('#modalForm')
 
 buttons.forEach(button => {
