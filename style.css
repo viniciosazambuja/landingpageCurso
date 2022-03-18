@@ -52,7 +52,10 @@ header li{
 .imagemPrincipal {
   display: inline-block;
   margin-right: 5%;
-  height: 300px;
+  height: 350px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
 }
 
 .primeiroTexto {
@@ -113,6 +116,7 @@ section{
   align-items: center;
   justify-content: space-between;
   display: flex;
+  position: relative;
 }
 
 .dados{
@@ -128,9 +132,9 @@ section{
 
 .divDados{
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: top;
 
 }
 
@@ -356,4 +360,27 @@ input[type=text], input[type=email] {
 
 #formulario{
   width: 300px;
+  margin: 0 auto;
+}
+
+.fas.fa-info{
+  font-size: 13px;
+}
+
+.fas.fa-info:hover + .information{
+  display: block;
+}
+
+.information{
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: solid 2px var(--red);
+  padding: 5px;
+  margin-left: 60px;
+  top: 0;
+}
+
+.extra{
+  margin-left: 100px !important;
 }

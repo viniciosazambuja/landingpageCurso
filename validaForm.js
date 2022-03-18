@@ -35,7 +35,7 @@ function validarF() {
       alert("Sobrenome não informado");
       sobrenomeF.focus();
     }
-    if (emailF.value == "" || !validateEmail(emailF.value)) {
+    if (emailF.value == "" || !validarEmail(emailF.value)) {
       alert("E-mail não informado ou inválido");
       emailF.focus();
     } else {
@@ -44,10 +44,11 @@ function validarF() {
     }
   }
 
-  function validateEmail(email){
+  function validarEmail(email){
     return String(email)
       .toLowerCase()
       .match(
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
+  
